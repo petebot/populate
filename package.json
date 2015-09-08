@@ -1,0 +1,36 @@
+{
+  "name": "contextant-brochure",
+  "version": "1.0.0",
+  "description": "contextant brochure app",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "local-web-server": "^0.5.23"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.0.0",
+    "load-grunt-tasks": "^3.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petebot/contextant-brochure.git"
+  },
+  "keywords": [
+    "npm",
+    "brochure",
+    "bootstrap"
+  ],
+  "author": "Pete Nawara",
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/petebot/contextant-brochure/issues"
+  },
+  "homepage": "https://github.com/petebot/contextant-brochure#readme"
+}

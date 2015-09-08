@@ -1,0 +1,76 @@
+$primary: #49ffad;
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.hero {
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+  color: #fefefe;
+  .callout{
+    color: $primary;
+    font-weight: bold;
+  }
+  p {
+    background: rgba(0, 0, 0, .5);
+  }
+}
+
+// cards
+  .card-inverse {
+    background: #333;
+    i, .apama, .bigmax, .presto {
+      color: $primary;
+      position: absolute;
+      top: .5rem;
+    }
+    .card-title {
+      position: relative;
+      left: 4.5rem;
+      top: .5rem;
+    }
+    .apama {
+      background: url(../img/apama.svg) no-repeat center;
+      height: 3rem;
+      width: 3.5rem;
+    }
+    .bigmax {
+      background: url(../img/bigmax.svg) no-repeat center;
+      height: 3rem;
+      width: 3.5rem;
+    }
+    .presto {
+      background: url(../img/presto.svg) no-repeat center;
+      height: 2.8rem;
+      width: 3.5rem;
+    }
+  }
+
+
+// buttons
+
+.btn {
+  border-radius: 0;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, .5);
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  background: $primary;
+  border-color: $primary;
+  color: #000;
+}
+
+.list-group-item {
+  background: #333333;
+  &:first-child, &:last-child {
+      border-radius: 0;
+  }
+}
+
+a.list-group-item {
+    color: rgb(235,235,235);
+}

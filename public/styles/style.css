@@ -1,0 +1,55 @@
+h1, h2, h3, h4, h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.hero {
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+  color: #fefefe; }
+  .hero .callout {
+    color: #49ffad;
+    font-weight: bold; }
+  .hero p {
+    background: rgba(0, 0, 0, 0.5); }
+
+.card-inverse {
+  background: #333; }
+  .card-inverse i, .card-inverse .apama, .card-inverse .bigmax, .card-inverse .presto {
+    color: #49ffad;
+    position: absolute;
+    top: .5rem; }
+  .card-inverse .card-title {
+    position: relative;
+    left: 4.5rem;
+    top: .5rem; }
+  .card-inverse .apama {
+    background: url(../img/apama.svg) no-repeat center;
+    height: 3rem;
+    width: 3.5rem; }
+  .card-inverse .bigmax {
+    background: url(../img/bigmax.svg) no-repeat center;
+    height: 3rem;
+    width: 3.5rem; }
+  .card-inverse .presto {
+    background: url(../img/presto.svg) no-repeat center;
+    height: 2.8rem;
+    width: 3.5rem; }
+
+.btn {
+  border-radius: 0;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase; }
+
+.btn-primary {
+  background: #49ffad;
+  border-color: #49ffad;
+  color: #000; }
+
+.list-group-item {
+  background: #333333; }
+  .list-group-item:first-child, .list-group-item:last-child {
+    border-radius: 0; }
+
+a.list-group-item {
+  color: #ebebeb; }
