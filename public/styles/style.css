@@ -3,6 +3,13 @@ h1, h2, h3, h4, h5 {
   font-weight: 100;
   text-transform: uppercase; }
 
+a {
+  color: #00af60; }
+  a:hover {
+    color: #007c44;
+    text-decoration: none;
+    cursor: pointer; }
+
 .hero {
   background: url(../img/bg.png) no-repeat center;
   background-size: cover;
@@ -40,11 +47,17 @@ h1, h2, h3, h4, h5 {
   border-radius: 0;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
   text-transform: uppercase; }
+  .btn:hover {
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); }
 
 .btn-primary {
   background: #49ffad;
   border-color: #49ffad;
   color: #000; }
+  .btn-primary:hover {
+    background: #00e27c;
+    border-color: #00e27c;
+    color: #000; }
 
 .list-group-item {
   background: #333333; }
