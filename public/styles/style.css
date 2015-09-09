@@ -1,3 +1,7 @@
+body {
+  position: relative;
+  padding-top: 3rem; }
+
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
@@ -10,6 +14,19 @@ a {
     text-decoration: none;
     cursor: pointer; }
 
+.navbar {
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2); }
+
+.navbar-brand {
+  background: url(../img/logo.svg) no-repeat;
+  text-indent: -999rem;
+  height: 2rem;
+  width: 12rem;
+  margin-top: .4rem; }
+
+.navbar-toggleable-sm {
+  top: 3rem; }
+
 .hero {
   background: url(../img/bg.png) no-repeat center;
   background-size: cover;
@@ -20,33 +37,43 @@ a {
   .hero p {
     background: rgba(0, 0, 0, 0.5); }
 
+.spyscroll {
+  position: relative;
+  bottom: 3rem; }
+
 .card-inverse {
   background: #333; }
   .card-inverse i, .card-inverse .apama, .card-inverse .bigmax, .card-inverse .presto {
-    color: #49ffad;
-    position: absolute;
-    top: .5rem; }
+    color: #49ffad; }
   .card-inverse .card-title {
-    position: relative;
-    left: 4.5rem;
-    top: .5rem; }
+    margin: .5rem; }
   .card-inverse .apama {
     background: url(../img/apama.svg) no-repeat center;
-    height: 3rem;
-    width: 3.5rem; }
+    height: 3.5rem;
+    width: 3rem;
+    margin-top: -.5rem; }
   .card-inverse .bigmax {
     background: url(../img/bigmax.svg) no-repeat center;
     height: 3rem;
-    width: 3.5rem; }
+    width: 3.5rem;
+    margin-top: -.3rem; }
   .card-inverse .presto {
     background: url(../img/presto.svg) no-repeat center;
-    height: 2.8rem;
-    width: 3.5rem; }
+    height: 2.5rem;
+    width: 3.5rem;
+    margin-top: 0rem; }
 
 .btn {
   border-radius: 0;
   box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
   text-transform: uppercase; }
+  .btn.disabled {
+    background: #ccc;
+    border: 1px solid #ccc; }
+    .btn.disabled:hover {
+      background: #ccc;
+      border: 1px solid #ccc;
+      box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5); }
   .btn:hover {
     box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5); }
 
@@ -60,7 +87,8 @@ a {
     color: #000; }
 
 .list-group-item {
-  background: #333333; }
+  background: #333333;
+  border-color: #3b3b3b; }
   .list-group-item:first-child, .list-group-item:last-child {
     border-radius: 0; }
 

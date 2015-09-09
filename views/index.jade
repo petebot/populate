@@ -12,27 +12,30 @@ html(lang='en')
     // Bootstrap CSS
     link(rel='stylesheet', href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css')
     link(rel='stylesheet', href='styles/style.css')
-  body
+  body#home(data-spy='scroll', data-target='#contextant-nav #collapsingNavbar2')
     // Navigation
-    nav.navbar.navbar-light.bg-faded
-      a.navbar-brand(href='#') Contextant
+    nav.navbar.navbar-light.bg-faded#contextant-nav.navbar-fixed-top
+      a.navbar-brand(href='#home') Contextant
       // Normal Navigation
       .hidden-sm-down
         ul.nav.navbar-nav
           li.nav-item
-            a.nav-link(href='#') Technologies
+            a.nav-link(href='#focus') Our Focus
           li.nav-item
-            a.nav-link(href='#') Blog
+            a.nav-link(href='#technologies') Technologies
           li.nav-item
-            a.nav-link(href='#') Contact
+            a.nav-link(href='http://contextofnow.blogspot.com/') Blog
+          li.nav-item
+            a.nav-link(href='#contact') Contact
       // Mobile Collapse Button
-      button.navbar-toggler.hidden-md-up.pull-right(type='button', data-toggle='collapse', data-target='#exCollapsingNavbar2')
+      button.navbar-toggler.hidden-md-up.pull-right(type='button', data-toggle='collapse', data-target='#CollapsingNavbar2')
         | ☰
     // Mobile Collapsable Content
-    #exCollapsingNavbar2.collapse.navbar-toggleable-sm.hidden-md-up
-      a.list-group-item(href='#') Technologies
-      a.list-group-item(href='#') Blog
-      a.list-group-item(href='#') Contact
+    #CollapsingNavbar2.collapse.navbar-toggleable-sm.hidden-md-up.navbar-fixed-top
+      a.list-group-item(href='#focus') Our Focus
+      a.list-group-item(href='#technologies') Technologies
+      a.list-group-item(href='#blog') Blog
+      a.list-group-item(href='#contact') Contact
     // Hero Unit
     .jumbotron.jumbotron-fluid.hero
       .container
@@ -49,16 +52,16 @@ html(lang='en')
           | Contextant is a proud partner with Software AG. Together, we provide solutions in the burgeoning markets of real time data analysis, complex event processing and data visualization. We can help put context around your data in an ever changing world.
         a.hidden-sm-down.btn.btn-primary.btn-lg(href='#', role='button') Let's Talk!
     .container
-      .row
+      .row.m-b
         .col-lg-9
           .col-lg-12
+            .spyscroll#focus
             h4.p-t Our Areas of Focus
-            .col-lg-12
           .col-lg-12
             .card.card-inverse
               .card-header.card-inverse
-                i.fa.fa-pie-chart.fa-3x.m-r.fa-fw
-                h4.card-title 
+                i.fa.fa-pie-chart.fa-3x.fa-fw.pull-right
+                h5.card-title 
                   | STREAMING ANALYTICS
               .card-block
                 p.card-text
@@ -66,8 +69,8 @@ html(lang='en')
           .col-lg-12
             .card.card-inverse
               .card-header.card-inverse
-                i.fa.fa-user-md.fa-3x.m-r.fa-fw
-                h4.card-title
+                i.fa.fa-user-md.fa-3x.fa-fw.pull-right
+                h5.card-title
                   | REAL WORLD AGILE
               .card-block
                 p.card-text
@@ -75,20 +78,20 @@ html(lang='en')
           .col-lg-12
             .card.card-inverse
               .card-header.card-inverse
-                i.fa.fa-database.fa-3x.m-r.fa-fw
-                h4.card-title 
+                i.fa.fa-database.fa-3x.fa-fw.pull-right
+                h5.card-title 
                   | BIG & FAST DATA
               .card-block
                 p.card-text
                   | Big Data represents all of the data flowing through your current systems, both structured and unstructured. Whether your organization uses a traditional relational DB or a mixture of persistence technologies, handling large volume/highly transactional applications means overcoming scalability and performance bottlenecks. We can help you overcome those challenges.
           .col-lg-12
+            .spyscroll#technologies
             h4.p-t Tools & Technologies We Use
-            hr
           .col-lg-12
             .card.card-inverse
               .card-header.card-inverse
-                .apama
-                h4.card-title 
+                .apama.pull-right
+                h5.card-title 
                   | APAMA
               .card-block
                 p.card-text
@@ -96,8 +99,8 @@ html(lang='en')
           .col-lg-12
             .card.card-inverse
               .card-header.card-inverse
-                .bigmax
-                h4.card-title 
+                .bigmax.pull-right
+                h5.card-title 
                   | BIG MEMORY
               .card-block
                 p.card-text
@@ -105,8 +108,8 @@ html(lang='en')
           .col-lg-12
             .card.card-inverse
               .card-header.card-inverse
-                .presto
-                h4.card-title 
+                .presto.pull-right
+                h5.card-title 
                   | PRESTO
               .card-block
                 p.card-text
@@ -114,7 +117,10 @@ html(lang='en')
         
         .col-lg-3
           .col-lg-12
+            .spyscroll#blog
             h4.p-t Recent Blog Posts 
+            small
+              a(href="#") View all blog posts
             .media
               .media-body
                 a
@@ -135,10 +141,43 @@ html(lang='en')
                 a
                   h5.media-heading Media heading
                 |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
+  .jumbotron.jumbotron-fluid
+    .spyscroll#contact
+    .container
+      .row.p-a
+        .col-lg-3
+          h3 We'd Love to Hear From You
+          p Contact us and let's see where we can help you meet your goals when dealing with data!
+        .col-lg-9
+          form(data-toggle='validator', role='form')
+            fieldset.form-group
+              label.control-label(for='inputName') Name
+              input#inputName.form-control.form-control-feedback(type='text', data-error='Even Mr. T has more than two characters in his name', minlength="2", maxlength='15', placeholder='Cina Saffary', required='')
+              .help-block.with-errors
+            
+            fieldset.form-group
+              label.control-label(for='inputEmail') Email
+              input#inputEmail.form-control.form-control-feedback(type='email', placeholder='Email', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
+              .help-block.with-errors
+            fieldset.form-group
+              label(for='exampleTextarea') Example textarea
+              textarea#exampleTextarea.form-control.form-control-feedback(rows='2', maxlength='200', minlength='2', data-error='At least say hello!')
+              .help-block.with-errors
+            fieldset.form-group
+              .checkbox
+                label
+                  input#terms(type='checkbox')
+                  p Want to receive updates?
+                small.text-muted
+                  p Don't worry, we only like SPAM from a can.
+            .form-group
+              button.btn.btn-primary(type='submit') Let's Talk!
+        
     // jQuery first, then Bootstrap JS.
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     script(src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.2/holder.js ')
-    script(src='validator.js')
+    script(src='../validator.js')
+    script(src='../custom.js')
     script(src="//localhost:35729/livereload.js")
+      
