@@ -22,7 +22,9 @@ a {
   text-indent: -999rem;
   height: 2rem;
   width: 12rem;
-  margin-top: .4rem; }
+  margin-top: .4rem;
+  position: relative;
+  top: .2rem; }
 
 .navbar-toggleable-sm {
   top: 3rem; }
