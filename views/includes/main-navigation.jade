@@ -1,0 +1,23 @@
+nav.navbar.navbar-light.bg-faded#contextant-nav.navbar-fixed-top.jumper
+  a.navbar-brand.jumps(href='#home') Contextant
+  // Normal Navigation
+  .hidden-sm-down
+    ul.nav.navbar-nav
+      li.nav-item
+        a.nav-link.jumps(href='#focus') Our Focus & Technologies
+      li.nav-item
+        a.nav-link(href='../views/aboutus.html') About Us
+      li.nav-item
+        a.nav-link(href='http://contextofnow.blogspot.com/') Blog
+      li.nav-item
+        a.nav-link.jumps(href='#contact') Contact
+  // Mobile Collapse Button
+  button.navbar-toggler.hidden-md-up.pull-right(type='button', data-toggle='collapse', data-target='#CollapsingNavbar2')
+    | ☰
+// Mobile Collapsable Content
+#CollapsingNavbar2.collapse.navbar-toggleable-sm.hidden-md-up.navbar-fixed-top.jumper
+  a.list-group-item.jumps(href='#focus') Our Focus
+  a.list-group-item.jumps(href='#technologies') Technologies
+  a.list-group-item(href='../views/aboutus.html') About Us 
+  a.list-group-item.jumps(href='#blog') Blog
+  a.list-group-item.jumps(href='#contact') Contact

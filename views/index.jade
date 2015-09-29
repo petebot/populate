@@ -7,51 +7,54 @@ html(lang='en')
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(name='title', content='Contextant')
     meta(name='description', content='Welcome to the Context of Now')
+    
+    // Font Awesome Icons
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-    link(href='https://fonts.googleapis.com/css?family=Raleway:400,900,700', rel='stylesheet', type='text/css')
+    
+    // Fonts
+    //- link(href='https://fonts.googleapis.com/css?family=Raleway:400,100,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,100,100italic,700,700italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic', rel='stylesheet', type='text/css')
+    script(src='https://use.typekit.net/qlo7ukp.js')
+      script.
+        try{Typekit.load({ async: true });}catch(e){}
+
     // Bootstrap CSS
     link(rel='stylesheet', href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css')
-    link(rel='stylesheet', href='styles/style.css')
+    link(rel='stylesheet', href='../styles/style.css')
+    
+    // favicons
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='http://www.contextant.com/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon-precomposed', sizes='152x152', href='http://www.contextant.com/apple-touch-icon-152x152.png')
+    link(rel='icon', type='image/png', href='http://www.contextant.com/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='http://www.contextant.com/favicon-16x16.png', sizes='16x16')
+    meta(name='application-name', content='Contextant')
+    meta(name='msapplication-TileColor', content='#FFFFFF')
+    meta(name='msapplication-TileImage', content='http://www.contextant.com/mstile-144x144.png')
+
+
   body#home(data-spy='scroll', data-target='#contextant-nav #collapsingNavbar2')
     // Navigation
-    nav.navbar.navbar-light.bg-faded#contextant-nav.navbar-fixed-top
-      a.navbar-brand(href='#home') Contextant
-      // Normal Navigation
-      .hidden-sm-down
-        ul.nav.navbar-nav
-          li.nav-item
-            a.nav-link(href='#focus') Our Focus
-          li.nav-item
-            a.nav-link(href='#technologies') Technologies
-          li.nav-item
-            a.nav-link(href='http://contextofnow.blogspot.com/') Blog
-          li.nav-item
-            a.nav-link(href='#contact') Contact
-      // Mobile Collapse Button
-      button.navbar-toggler.hidden-md-up.pull-right(type='button', data-toggle='collapse', data-target='#CollapsingNavbar2')
-        | ☰
-    // Mobile Collapsable Content
-    #CollapsingNavbar2.collapse.navbar-toggleable-sm.hidden-md-up.navbar-fixed-top
-      a.list-group-item(href='#focus') Our Focus
-      a.list-group-item(href='#technologies') Technologies
-      a.list-group-item(href='#blog') Blog
-      a.list-group-item(href='#contact') Contact
+    include ./includes/main-navigation.jade
+    
     // Hero Unit
-    .jumbotron.jumbotron-fluid.hero
+    .jumbotron.jumbotron-fluid.hero.splash
       .container
+        .partner.hidden-sm-down
+          | Software AG Partner
         h4.hidden-md-up
           | The Context of
           span.hidden-md-up.callout 
             | Now
         p.hidden-md-up.p-a
           | We provide solutions in the burgeoning markets of real time data analysis, complex event processing and data visualization. We can help put context around your data in an ever changing world.
-        a.hidden-md-up.btn.btn-primary.btn-md.btn-block(href='#', role='button') Let's Talk!
+        a.hidden-md-up.btn.btn-primary.btn-md.btn-block.jumps(href='#contact') Let's Talk!
         h2.hidden-sm-down.display-2 The Context of
         h1.hidden-sm-down.display-4.callout Now
         p.hidden-sm-down.lead.p-a
           | Contextant is a proud partner with Software AG. Together, we provide solutions in the burgeoning markets of real time data analysis, complex event processing and data visualization. We can help put context around your data in an ever changing world.
-        a.hidden-sm-down.btn.btn-primary.btn-lg(href='#', role='button') Let's Talk!
-    .container
+        a.hidden-sm-down.btn.btn-primary.btn-lg.jumps(href='#contact') Let's Talk!
+    .container.p-t.m-t
       .row.m-b
         .col-lg-9
           .col-lg-6
@@ -65,6 +68,7 @@ html(lang='en')
               .card-block
                 p.card-text
                   | Businesses are overloaded with constant streams of incoming data. What can all that data really tell you? What are the insights that can only be understood in the context of everything else that is happening? Complex Event Processing will allow companies to extract value from both their current enterprise applications, Internet of Things (IoT) products, and the next generation of mobile applications.
+                a.card-link(href='../views/apama.html') Learn More 
             .card.card-inverse
               .card-header.card-inverse
                 i.fa.fa-user-md.fa-3x.fa-fw.pull-right
@@ -73,6 +77,7 @@ html(lang='en')
               .card-block
                 p.card-text
                   | Have a software project in trouble? We can help you right the ship, introduce proven software development practices to improve your teams productivity and ensure your project is a success.
+                a.card-link(href='../views/terracotta.html') Learn More 
             .card.card-inverse
               .card-header.card-inverse
                 i.fa.fa-database.fa-3x.fa-fw.pull-right
@@ -81,7 +86,7 @@ html(lang='en')
               .card-block
                 p.card-text
                   | Big Data represents all of the data flowing through your current systems, both structured and unstructured. Whether your organization uses a traditional relational DB or a mixture of persistence technologies, handling large volume/highly transactional applications means overcoming scalability and performance bottlenecks. We can help you overcome those challenges.
-            
+                a.card-link(href='../views/presto.html') Learn More 
           .col-lg-6
             .spyscroll#technologies
             h4.p-t Tools & Technologies
@@ -93,6 +98,7 @@ html(lang='en')
               .card-block
                 p.card-text
                   | What to do with all that data? Apama is the industry leading streaming analytics/complex event processing platform that can help you attach real value to the constant stream of data your applications are processing. We can help you utilize Apama to correlate, analyze and wrap meaningful "context" around all of your streams of data.
+                a.card-link(href='../views/apama.html') Learn More 
             .card.card-inverse
               .card-header.card-inverse
                 .bigmax.pull-right
@@ -101,6 +107,7 @@ html(lang='en')
               .card-block
                 p.card-text
                   | App too slow? We'll help you achieve your scalability/performance goals. We'll help you achieve fast, scalable applications using the Terracotta BigMemory suite. We can guide you through the pitfalls of implementing a caching solution for highly volatile applications. A well designed cache helps eliminates the data-tier bottlenecks in your application and allows it to achieve max performance.
+                a.card-link(href='../views/terracotta.html') Learn More 
             .card.card-inverse
               .card-header.card-inverse
                 .presto.pull-right
@@ -109,7 +116,7 @@ html(lang='en')
               .card-block
                 p.card-text
                   | Visualize all of your data in real-time. Presto allows you to create sophisticated dashboards and graphs that can provide you with a better understanding of your data and to extract the context that leads to certain situations.
-        
+                a.card-link(href='../views/presto.html') Learn More 
         .col-lg-3
           .col-lg-12
             .spyscroll#blog
@@ -136,43 +143,16 @@ html(lang='en')
                 a
                   h5.media-heading Media heading
                 |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-  .jumbotron.jumbotron-fluid
-    .spyscroll#contact
-    .container
-      .row.p-a
-        .col-lg-3
-          h3 We'd Love to Hear From You
-          p Contact us and let's see where we can help you meet your goals when dealing with data!
-        .col-lg-9
-          form(data-toggle='validator', role='form')
-            fieldset.form-group
-              label.control-label(for='inputName') Name
-              input#inputName.form-control.form-control-feedback(type='text', data-error='Even Mr. T has more than two characters in his name', minlength="2", maxlength='15', placeholder='Cina Saffary', required='')
-              .help-block.with-errors
-            
-            fieldset.form-group
-              label.control-label(for='inputEmail') Email
-              input#inputEmail.form-control.form-control-feedback(type='email', placeholder='Email', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
-              .help-block.with-errors
-            fieldset.form-group
-              label(for='exampleTextarea') Example textarea
-              textarea#exampleTextarea.form-control.form-control-feedback(rows='2', maxlength='200', minlength='2', data-error='At least say hello!')
-              .help-block.with-errors
-            fieldset.form-group
-              .checkbox
-                label
-                  input#terms(type='checkbox')
-                  p Want to receive updates?
-                small.text-muted
-                  p Don't worry, we only like SPAM from a can.
-            .form-group
-              button.btn.btn-primary(type='submit') Let's Talk!
-        
-    // jQuery first, then Bootstrap JS.
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
-    script(src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.2/holder.js ')
-    script(src='../validator.js')
-    script(src='../custom.js')
-    script(src="//localhost:35729/livereload.js")
+  // Contact
+  include ./includes/contact.jade      
+  
+  
+  
+  // jQuery first, then Bootstrap JS.
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  script(src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.2/holder.js ')
+  script(src='../validator.js')
+  script(src='../custom.js')
+  script(src="//localhost:35729/livereload.js")
       

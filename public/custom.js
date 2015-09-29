@@ -2,7 +2,7 @@ $(document).ready(function () {
   $("#CollapsingNavbar2 a.list-group-item").click(function(event) {
     $(".navbar-toggleable-sm").collapse('hide');
   });
-  $(".navbar-brand, #contextant-nav li a[href^='#'], #CollapsingNavbar2 a.list-group-item").on('click', function(event) {
+  $(".jumps").on('click', function(event) {
     var target;
     target = this.hash;
 
