@@ -1,7 +1,7 @@
 {
-  "name": "contextant-brochure",
+  "name": "populate",
   "version": "1.0.0",
-  "description": "contextant brochure app",
+  "description": "populate brochure app",
   "main": "app.js",
   "dependencies": {
     "express": "^4.13.3",
@@ -20,10 +20,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/petebot/contextant-brochure.git"
-  },
   "keywords": [
     "npm",
     "brochure",
@@ -33,7 +29,7 @@
   "license": "ISC",
   "private": true,
   "bugs": {
-    "url": "https://github.com/petebot/contextant-brochure/issues"
+    "url": "https://github.com/petebot/populate/issues"
   },
-  "homepage": "https://github.com/petebot/contextant-brochure#readme"
+  "homepage": "https://github.com/petebot/populate#readme"
 }

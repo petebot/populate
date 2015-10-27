@@ -1,0 +1,67 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags always come first
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    meta(name='title', content='Contextant')
+    meta(name='description', content='Welcome to the Context of Now')
+    
+    // Font Awesome Icons
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
+    
+    // Fonts
+    //- link(href='https://fonts.googleapis.com/css?family=Raleway:400,100,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,100,100italic,700,700italic', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,300,300italic', rel='stylesheet', type='text/css')
+    script(src='https://use.typekit.net/qlo7ukp.js')
+      script.
+        try{Typekit.load({ async: true });}catch(e){}
+
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css')
+    link(rel='stylesheet', href='../styles/style.css')
+    
+    // favicons
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='http://www.contextant.com/apple-touch-icon-144x144.png')
+    link(rel='apple-touch-icon-precomposed', sizes='152x152', href='http://www.contextant.com/apple-touch-icon-152x152.png')
+    link(rel='icon', type='image/png', href='http://www.contextant.com/favicon-32x32.png', sizes='32x32')
+    link(rel='icon', type='image/png', href='http://www.contextant.com/favicon-16x16.png', sizes='16x16')
+    meta(name='application-name', content='Contextant')
+    meta(name='msapplication-TileColor', content='#FFFFFF')
+    meta(name='msapplication-TileImage', content='http://www.contextant.com/mstile-144x144.png')
+
+
+  body
+    include ./includes/main-navigation.jade
+    .jumbotron.jumbotron-fluid.splash.bg-primary
+      .overlay
+      .container
+        .col-xl-5.col-xl-offset-7
+          h1.display-2 Drawing People In
+          p.lead 
+            | We 
+            em really 
+            | love red phones!
+          p 
+            | Here at populate, we answer 
+            em all 
+            | of our calls on only the reddest of phones. If you want to get a hold of us, we truly hope you have a red phone too! If not, give us a call and we'll get one to you. Wait, no, we don't receive calls that aren't made from a red phone. Click the button below and we'll get you a red phone ASAP.
+          .btn.btn-success.btn-lg Order a Red Phone
+    .container.p-a 
+      h2 Our Focus &amp; Methodology
+      h5.text-muted Here's why we care about red phones, and why you should too:
+      p Firstly, they're not as common as you think, and who knows when we'll come across more! Also, they work great in an emergency situation.
+    include ./includes/contact.jade      
+  
+  
+  
+  // jQuery first, then Bootstrap JS.
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+  script(src='https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.2/holder.js ')
+  script(src='../validator.js')
+  script(src='../custom.js')
+  script(src="//localhost:35729/livereload.js")
+      

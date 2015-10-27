@@ -17,7 +17,17 @@
             input#inputEmail.form-control.form-control-feedback(type='email', placeholder='Email', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
             .help-block.with-errors
           fieldset.form-group
-            label(for='exampleTextarea') Example textarea
+            label.control-label(for='inputEmail') Company Name
+            input#inputEmail.form-control.form-control-feedback(type='text', placeholder='Company', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
+            .help-block.with-errors
+          fieldset.form-group
+            label.control-label(for='inputEmail') What's your position with the company?
+            input#inputEmail.form-control.form-control-feedback(type='text', placeholder='Title', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
+            .help-block.with-errors
+          fieldset.form-group
+            label(for='exampleTextarea') What's your project?
+            small.text-muted
+              p Give us a small insight into what your needs are.
             textarea#exampleTextarea.form-control.form-control-feedback(rows='2', maxlength='200', minlength='2', data-error='At least say hello!')
             .help-block.with-errors
           fieldset.form-group

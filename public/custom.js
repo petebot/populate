@@ -12,8 +12,8 @@ $(document).ready(function () {
     navOffset = $('#navbar').height();
 
     return $('html, body').animate({
-      scrollTop: $(this.hash).offset().top - navOffset
-    }, 300, function() {
+      scrollTop: $(this.hash).offset().top - navOffset - 50
+    }, 1000, function() {
       return window.history.pushState(null, null, target);
     });
   });

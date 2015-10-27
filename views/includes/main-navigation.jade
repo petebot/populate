@@ -1,14 +1,16 @@
-nav.navbar.navbar-light.bg-faded#contextant-nav.navbar-fixed-top.jumper
-  a.navbar-brand.jumps(href='#home') Contextant
+nav#navbar.navbar.navbar-fixed-top.jumper
+  a.navbar-brand.jumps(href='#home') 
+    | Populate
+    
   // Normal Navigation
   .hidden-sm-down
-    ul.nav.navbar-nav
+    ul.nav.navbar-nav.pull-right
       li.nav-item
-        a.nav-link.jumps(href='#focus') Our Focus & Technologies
+        a.nav-link.jumps(href='#focus') Our Focus & Methodology
       li.nav-item
-        a.nav-link(href='../views/aboutus.html') About Us
+        a.nav-link.jumps(href='#ourdesigns') Our Designs
       li.nav-item
-        a.nav-link(href='http://contextofnow.blogspot.com/') Blog
+        a.nav-link.jumps(href='#aboutus') About Us
       li.nav-item
         a.nav-link.jumps(href='#contact') Contact
   // Mobile Collapse Button
@@ -16,8 +18,7 @@ nav.navbar.navbar-light.bg-faded#contextant-nav.navbar-fixed-top.jumper
     | ☰
 // Mobile Collapsable Content
 #CollapsingNavbar2.collapse.navbar-toggleable-sm.hidden-md-up.navbar-fixed-top.jumper
-  a.list-group-item.jumps(href='#focus') Our Focus
-  a.list-group-item.jumps(href='#technologies') Technologies
+  a.list-group-item.jumps(href='#focus') Our Focus & Methodology
+  a.list-group-item.jumps(href='#ourdesigns') Our Designs
   a.list-group-item(href='../views/aboutus.html') About Us 
-  a.list-group-item.jumps(href='#blog') Blog
   a.list-group-item.jumps(href='#contact') Contact

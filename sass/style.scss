@@ -1,170 +1,55 @@
-$primary: #49ffad;
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,800,800italic);
 
 body {
-  font-family: "Roboto", sans-serif;
-  position: relative;
-  padding-top: 3rem;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: "Semplicita Pro", sans-serif;
-  font-weight: 100;
-  text-transform: uppercase;
-}
-a {
-  color: darken($primary, 30);
-  &:hover {
-    color: darken($primary, 40);
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-}
-
-
-
-.navbar {
-  box-shadow: 0px 5px 0px rgba(0, 0, 0, .2);
-}
-
-.navbar-brand {
-  background: url(../img/logo.svg) no-repeat;
-  text-indent: -999rem;
-  height: 2rem;
-  width: 12rem;
-  margin-top: .4rem;
-  position: relative;
-  top: .2rem;
-}
-
-.navbar-toggleable-sm {
-  top: 3rem;
-}
-
-
-.hero {
-  background-color: #333;
-  background-size: cover;
-  color: #fefefe;
-  margin-bottom: 0rem;
-  position: relative;
-  &.splash {
-    background: url(../img/bg.png) no-repeat center;
-    .partner {
-      background: url(../img/softwareAG-partner.svg) no-repeat;
-      height: 3rem;
-      width: 9.3rem;
-      position: absolute;
-      top: 10px;
-      right: 5px;
-      text-indent: -999em;
-    }
-  }
-  .callout{
-    font-family: "Semplicita Pro", sans-serif;
-    color: $primary;
-    font-weight: 700;
-    line-height: .6em;
-    margin-bottom: 2rem;
-  }
-  p {
-    background: rgba(0, 0, 0, .5);
-  }
-  a {
-    color: $primary;
-    &.btn {
-      color: #333;
-    }
-  }
-  .profile {
-    margin-bottom: 3rem;
-    display: block;
-    img, .block {
-      background-size: cover;
-      width: 100%;
-      background: $primary;
-    }
-  }
-}
-
-.spyscroll {
-  position: relative;
-    bottom: 3rem;
-}
-
-// cards
-  .card-inverse {
-    background: #333;
-    a, i, .apama, .bigmax, .presto, .card-link {
-      color: $primary;
+  padding-top: 5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  .navbar {
+    background: #fff;
+    height: 5rem;
+    .nav-link {
+      padding-top: 1.2rem;
+      padding-bottom: 1.2rem;
+      color: #666;
       &:hover {
-        color: darken($primary, 20);
+        color: #000;
       }
     }
-    .card-title {
-      margin: .5rem;
-    }
-    .apama {
-      background: url(../img/apama.svg) no-repeat center;
-      height: 3.5rem;
-      width: 3rem;
-      margin-top: -.5rem;
-    }
-    .bigmax {
-      background: url(../img/bigmax.svg) no-repeat center;
+    .navbar-brand {
+      font-family: "Merriweather", serif;
+      font-weight: 900;
+      font-style: italic;
+      margin-top: 1rem;
+      font-size: 2.5rem;
+      color: #000;
+      text-indent: -999rem;
+      background-image: url(/img/logo.svg);
+      background-repeat: no-repeat;
       height: 3rem;
-      width: 3.5rem;
-      margin-top: -.3rem;
-    }
-    .presto {
-      background: url(../img/presto.svg) no-repeat center;
-      height: 2.5rem;
-      width: 3.5rem;
-      margin-top: 0rem;
+      width: 15rem;
     }
   }
-
-
-// buttons
-
-.btn {
-  border-radius: 0;
-  box-shadow: 5px 5px 0px rgba(0, 0, 0, .5);
-  text-transform: uppercase;
-  &.disabled {
-    background: #ccc;
-    border: 1px solid #ccc;
-    &:hover {
-      background: #ccc;
-      border: 1px solid #ccc;
-      box-shadow: 5px 5px 0px rgba(0, 0, 0, .5);
+  .jumbotron-fluid {
+    padding: 4rem 0;
+    position: relative;
+    &.splash {
+      background-image: url(/img/brek.jpg);
+      background-size: cover;
     }
-  }
-  &:hover {
-    box-shadow: 3px 3px 0px rgba(0, 0, 0, .5);
   }
 }
 
-.btn-primary {
-  background: $primary;
-  border-color: $primary;
-  color: #000;
-  &:hover {
-    background: darken($primary, 20);
-    border-color: darken($primary, 20);
-    color: #000;
-
-  }
+h1, h2, h3, h4 {
+  font-family: "Merriweather", serif;
+  //font-style: italic;
 }
-
-.list-group-item {
-  background: #333333;
-  border-color: lighten(#333, 3);
-  &:first-child, &:last-child {
-      border-radius: 0;
-  }
-}
-
-a.list-group-item {
-    color: rgb(235,235,235);
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(20, 0, 0, .5);
 }
