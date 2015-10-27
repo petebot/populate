@@ -12,24 +12,18 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../styles/style.css">
     <!-- favicons-->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.contextant.com/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://www.contextant.com/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="http://www.contextant.com/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://www.contextant.com/favicon-16x16.png" sizes="16x16">
-    <meta name="application-name" content="Contextant">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="http://www.contextant.com/mstile-144x144.png">
+    
   </head>
   <body>
-    <nav id="navbar" class="navbar navbar-fixed-top jumper"><a href="#home" class="navbar-brand jumps">
-         
+    <nav id="navbar" class="navbar navbar-fixed-top jumper navbar-dark bg-inverse"><a href="#home" class="navbar-brand jumps">
+
         Populate</a>
       <!-- Normal Navigation-->
       <div class="hidden-sm-down">
         <ul class="nav navbar-nav pull-right">
           <li class="nav-item"><a href="#focus" class="nav-link jumps">Our Focus & Methodology</a></li>
-          <li class="nav-item"><a href="#ourdesigns" class="nav-link jumps">Our Designs</a></li>
-          <li class="nav-item"><a href="#aboutus" class="nav-link jumps">About Us</a></li>
+          <li class="nav-item"><a href="#design" class="nav-link jumps">Our Designs</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link jumps">About Us</a></li>
           <li class="nav-item"><a href="#contact" class="nav-link jumps">Contact</a></li>
         </ul>
       </div>
@@ -37,25 +31,81 @@
       <button type="button" data-toggle="collapse" data-target="#CollapsingNavbar2" class="navbar-toggler hidden-md-up pull-right">☰</button>
     </nav>
     <!-- Mobile Collapsable Content-->
-    <div id="CollapsingNavbar2" class="collapse navbar-toggleable-sm hidden-md-up navbar-fixed-top jumper"><a href="#focus" class="list-group-item jumps">Our Focus & Methodology</a><a href="#ourdesigns" class="list-group-item jumps">Our Designs</a><a href="../views/aboutus.html" class="list-group-item">About Us </a><a href="#contact" class="list-group-item jumps">Contact</a></div>
-    <div class="jumbotron jumbotron-fluid splash bg-success">
+    <div id="CollapsingNavbar2" class="collapse navbar-toggleable-sm hidden-md-up navbar-fixed-top jumper"><a href="#focus" class="list-group-item jumps">Our Focus & Methodology</a><a href="#design" class="list-group-item jumps">Our Designs</a><a href="#about" class="list-group-item">About Us </a><a href="#contact" class="list-group-item jumps">Contact</a></div>
+    <div id="home" class="jumbotron jumbotron-fluid splash bg-success">
       <div class="overlay"></div>
       <div class="container">
-        <div class="col-xl-5">
+        <div class="col-lg-12 info-box">
           <h1 class="display-2">We Build Experiences</h1>
           <p class="lead">
-             
-            We design and develop temporary objects and spaces.  
+
+            We design and develop temporary objects and spaces. We hand-make our designs in-house. We produce and execute the events these designs are fabricated for. Our team is dedicated to the projects we work on from concept to experience.
           </p>
-          <p>
-             
-            We hand-make our designs in-house.  We produce and execute the events these designs are fabricated for.  Our team is dedicated to the projects we work on from concept to experience.
-          </p><a href="#contact" class="btn btn-success btn-lg jumps">Order a Red Phone</a>
+          <h4 class="m-t-lg">Ready to start a project?</h4><a href="#contact" class="btn btn-success btn-lg m-t jumps"> <span class="icon-bubble-dots"> </span>Talk to a Project Planner!</a>
         </div>
       </div>
     </div>
-    <div class="container p-a"> 
+    <div class="container p-a">
       <h2 id="focus">Our Focus &amp; Methodology</h2>
+      <h5 class="text-muted">Here's why we care about red phones, and why you should too:</h5>
+      <p>Firstly, they're not as common as you think, and who knows when we'll come across more! Also, they work great in an emergency situation.</p>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-img-top">
+            <div class="span icon-pencil-ruler"></div>
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">#1) Design</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-img-top">
+            <div class="span icon-hat"></div>
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Dapibus ac facilisis in</li>
+            <li class="list-group-item">Vestibulum at eros</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid design">
+      <div id="design" class="container">
+        <h2 class="m-b-md">Have a look at some of our work!</h2>
+        <div class="examples m-b-lg">
+          <div class="col-lg-6 image example one">
+            <p>one</p>
+          </div>
+          <div class="col-lg-6 image example two">
+            <p>two</p>
+          </div>
+          <div class="col-lg-6 image example three">
+            <p>three</p>
+          </div>
+          <div class="col-lg-6 image example four">
+            <p>four</p>
+          </div>
+        </div>
+      </div>
+      <div class="container m-t">
+        <p class="text-muted">Like what you see? Contact us so we can get started on your project today!</p><a href="#contact" class="btn btn-lg btn-success jumps">Get Started</a>
+      </div>
+    </div>
+    <div class="container p-a">
+      <h2 id="about">About Us &amp; Our Team</h2>
       <h5 class="text-muted">Here's why we care about red phones, and why you should too:</h5>
       <p>Firstly, they're not as common as you think, and who knows when we'll come across more! Also, they work great in an emergency situation.</p>
     </div>
@@ -65,7 +115,7 @@
         <div class="row p-a">
           <div class="col-lg-3">
             <h3>We'd Love to Hear From You</h3>
-            <p>Contact us and let's see where we can help you meet your goals when dealing with data!</p>
+            <p>Contact us and let's see where we can help you meet your goals when creating an event!</p>
           </div>
           <div class="col-lg-9">
             <form data-toggle="validator" role="form">
