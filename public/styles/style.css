@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,800,800italic);
 .logo {
   font-family: "Merriweather", serif;
@@ -6,16 +6,12 @@
   font-style: italic;
   margin-top: 1rem;
   font-size: 2.5rem;
-  color: pink;
-  text-indent: -999rem;
-  background-image: url(/img/logo.svg);
-  background-repeat: no-repeat;
   height: 6rem;
   width: 15rem; }
   .logo.white {
-    background-image: url(/img/logo-white.svg); }
-  .logo.ninety {
-    background-image: url(/img/logo-white-ninety.svg); }
+    color: #fff; }
+  .logo.dark {
+    color: #222; }
 
 body {
   padding-top: 5rem;
@@ -30,33 +26,50 @@ body {
       color: #666; }
       body .navbar .nav-link:hover {
         color: #000; }
+    body .navbar .navbar-toggler {
+      padding-top: 1.2rem; }
     body .navbar .navbar-brand {
       font-family: "Merriweather", serif;
       font-weight: 900;
       font-style: italic;
-      margin-top: 1rem;
-      font-size: 2.5rem;
-      color: #000;
-      text-indent: -999rem;
-      background-image: url(/img/logo-white.svg);
-      background-repeat: no-repeat;
-      height: 3rem;
-      width: 15rem; }
+      font-size: 2.5rem; }
+      body .navbar .navbar-brand.small {
+        font-size: 1.5rem;
+        padding-top: .8rem; }
   body .jumbotron-fluid {
     padding: 4rem 0;
     position: relative; }
+    body .jumbotron-fluid.contact figure {
+      width: 100%; }
+    body .jumbotron-fluid.last-section {
+      margin-bottom: 0; }
     body .jumbotron-fluid.splash {
-      background-image: url(/img/alargea.jpg);
       background-size: cover;
-      background-position: center; }
+      background-position: center;
+      text-align: center;
+      position: relative; }
+      body .jumbotron-fluid.splash.view-section {
+        min-height: 55vh; }
+      body .jumbotron-fluid.splash .logo {
+        font-size: 5rem;
+        position: absolute;
+        bottom: 1.5rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: auto; }
+        body .jumbotron-fluid.splash .logo.small {
+          font-size: 3rem; }
     body .jumbotron-fluid .info-box {
       background: rgba(0, 0, 0, 0.5);
       padding: 2rem; }
     body .jumbotron-fluid .logo.white.ninety {
       height: 20rem; }
+  body .open {
+    margin-top: -1rem; }
 
 .image.example {
-  height: 20rem;
+  height: 16rem;
   background-size: cover;
   background-position: center; }
   .image.example.one {
@@ -68,8 +81,11 @@ body {
   .image.example.four {
     background-image: url(/img/alargea.jpg); }
 
-h1, h2, h3, h4 {
-  font-family: "Merriweather", serif; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", serif;
+  font-weight: 900; }
+  h1.callout, h2.callout, h3.callout, h4.callout, h5.callout, h6.callout {
+    font-style: italic; }
 
 .overlay {
   position: absolute;
@@ -79,8 +95,13 @@ h1, h2, h3, h4 {
   right: 0;
   background: rgba(20, 0, 0, 0.5); }
 
-.card .card-img-top .span {
-  font-size: 10rem; }
+.view-section {
+  min-height: 90vh; }
+
+.card {
+  background: #fff; }
+  .card .card-img-top .span {
+    font-size: 6rem; }
 
 @font-face {
   font-family: 'icomoon';

@@ -1,7 +1,7 @@
 //@import 'linearicons';
 
 
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,700,400italic,300italic,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic,800,800italic);
 
 
@@ -13,17 +13,13 @@
   font-style: italic;
   margin-top: 1rem;
   font-size: 2.5rem;
-  color: pink;
-  text-indent: -999rem;
-  background-image: url(/img/logo.svg);
-  background-repeat: no-repeat;
   height: 6rem;
   width: 15rem;
   &.white {
-    background-image: url(/img/logo-white.svg);
+    color: #fff;
   }
-  &.ninety {
-    background-image: url(/img/logo-white-ninety.svg);
+  &.dark {
+    color: #222;
   }
 }
 
@@ -42,27 +38,51 @@ body {
         color: #000;
       }
     }
+    .navbar-toggler {
+      padding-top: 1.2rem;
+    }
     .navbar-brand {
       font-family: "Merriweather", serif;
       font-weight: 900;
       font-style: italic;
-      margin-top: 1rem;
       font-size: 2.5rem;
-      color: #000;
-      text-indent: -999rem;
-      background-image: url(/img/logo-white.svg);
-      background-repeat: no-repeat;
-      height: 3rem;
-      width: 15rem;
+      &.small {
+        font-size: 1.5rem;
+        padding-top: .8rem;
+      }
     }
   }
   .jumbotron-fluid {
     padding: 4rem 0;
     position: relative;
+    &.contact {
+      figure {
+        width: 100%;
+      }
+    }
+    &.last-section {
+      margin-bottom: 0;
+    }
     &.splash {
-      background-image: url(/img/alargea.jpg);
       background-size: cover;
       background-position: center;
+      text-align: center;
+      position: relative;
+    &.view-section {
+      min-height: 55vh;
+    }
+      .logo {
+        font-size: 5rem;
+        position: absolute;
+        bottom: 1.5rem;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        &.small {
+          font-size: 3rem;
+        }
+      }
     }
     .info-box {
       background: rgba(0,0,0,.5);
@@ -72,11 +92,14 @@ body {
       height: 20rem;
     }
   }
+  .open {
+    margin-top: -1rem;
+  }
 }
 
 .image {
   &.example {
-    height: 20rem;
+    height: 16rem;
     background-size: cover;
     background-position: center;
     &.one {
@@ -94,9 +117,12 @@ body {
   }
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Merriweather", serif;
-  //font-style: italic;
+  font-weight: 900;
+  &.callout {
+    font-style: italic;
+  }
 }
 .overlay {
   position: absolute;
@@ -106,10 +132,14 @@ h1, h2, h3, h4 {
   right: 0;
   background: rgba(20, 0, 0, .5);
 }
+.view-section {
+  min-height: 90vh;
+}
 .card {
+  background: #fff;
   .card-img-top {
     .span {
-      font-size: 10rem;
+      font-size: 6rem;
     }
   }
 }

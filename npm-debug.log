@@ -1,0 +1,83 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/NawaraStudios/.nvm/versions/node/v4.1.1/bin/node',
+1 verbose cli   '/Users/NawaraStudios/.nvm/versions/node/v4.1.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.9
+3 info using node@v4.1.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/NawaraStudios/git/drawingpeoplein',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/NawaraStudios/.npm/populate/1.0.0/package.tgz not in flight; packing
+9 info lifecycle populate@1.0.0~prepublish: populate@1.0.0
+10 silly lifecycle populate@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/NawaraStudios/.npm/populate/1.0.0/package.tgz',
+11 verbose tar pack   '/Users/NawaraStudios/git/drawingpeoplein' ]
+12 verbose tarball /Users/NawaraStudios/.npm/populate/1.0.0/package.tgz
+13 verbose folder /Users/NawaraStudios/git/drawingpeoplein
+14 verbose addLocalTarball adding from inside cache /Users/NawaraStudios/.npm/populate/1.0.0/package.tgz
+15 silly cache afterAdd populate@1.0.0
+16 verbose afterAdd /Users/NawaraStudios/.npm/populate/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/NawaraStudios/.npm/populate/1.0.0/package/package.json written
+18 silly publish { name: 'populate',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'populate brochure app',
+18 silly publish   main: 'app.js',
+18 silly publish   dependencies:
+18 silly publish    { express: '^4.13.3',
+18 silly publish      jade: '^1.11.0',
+18 silly publish      'local-web-server': '^0.5.23' },
+18 silly publish   devDependencies:
+18 silly publish    { 'coffee-script': '^1.10.0',
+18 silly publish      grunt: '^0.4.5',
+18 silly publish      'grunt-contrib-jade': '^0.15.0',
+18 silly publish      'grunt-contrib-watch': '^0.6.1',
+18 silly publish      'grunt-sass': '^1.0.0',
+18 silly publish      jade: '^1.11.0',
+18 silly publish      'load-grunt-tasks': '^3.2.0' },
+18 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+18 silly publish   keywords: [ 'npm', 'brochure', 'bootstrap' ],
+18 silly publish   author: { name: 'Pete Nawara' },
+18 silly publish   license: 'ISC',
+18 silly publish   private: false,
+18 silly publish   bugs: { url: 'https://github.com/petebot/populate/issues' },
+18 silly publish   homepage: 'https://github.com/petebot/populate#readme',
+18 silly publish   readme: '--install\nI think this should get the server running\n\n- npm install\n- make sure you got node\n- got grunt?\n- run _node app.js_\n- view localhost:8000\n',
+18 silly publish   readmeFilename: 'readme.md',
+18 silly publish   gitHead: 'ebf3ad3b6ce98a060c5f6828ff5cf5cca04c3a1f',
+18 silly publish   _id: 'populate@1.0.0',
+18 silly publish   _shasum: '34b7e00263a8c9cb9b5c132a294886a0cf30b3eb',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name populate
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/populate
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/NawaraStudios/.npm/populate/1.0.0/package.tgz
+26 verbose stack Error: auth required for publishing
+26 verbose stack     at CachingRegistryClient.publish (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+26 verbose stack     at /Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:137:14
+26 verbose stack     at mapToRegistry (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+26 verbose stack     at publish_ (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:106:3)
+26 verbose stack     at Array.<anonymous> (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at LOOP (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+26 verbose stack     at chain (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+26 verbose stack     at /Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/lib/publish.js:72:5
+26 verbose stack     at RES (/Users/NawaraStudios/.nvm/versions/node/v4.1.1/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+27 verbose cwd /Users/NawaraStudios/git/drawingpeoplein
+28 error Darwin 15.0.0
+29 error argv "/Users/NawaraStudios/.nvm/versions/node/v4.1.1/bin/node" "/Users/NawaraStudios/.nvm/versions/node/v4.1.1/bin/npm" "publish"
+30 error node v4.1.1
+31 error npm  v3.3.9
+32 error code ENEEDAUTH
+33 error need auth auth required for publishing
+33 error need auth You need to authorize this machine using `npm adduser`
+34 verbose exit [ 1, true ]

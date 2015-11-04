@@ -1,24 +1,26 @@
 nav#navbar.navbar.navbar-fixed-top.jumper.navbar-dark.bg-inverse
-  a.navbar-brand.jumps(href='#home') 
-    | Populate
-    
-  // Normal Navigation
-  .hidden-sm-down
-    ul.nav.navbar-nav.pull-right
-      li.nav-item
-        a.nav-link.jumps(href='#focus') Our Focus & Methodology
-      li.nav-item
-        a.nav-link.jumps(href='#design') Our Designs
-      li.nav-item
-        a.nav-link.jumps(href='#about') About Us
-      li.nav-item
-        a.nav-link.jumps(href='#contact') Contact
-  // Mobile Collapse Button
-  button.navbar-toggler.hidden-md-up.pull-right(type='button', data-toggle='collapse', data-target='#CollapsingNavbar2')
-    | ☰
+  .container
+    a.navbar-brand.jumps.hidden-sm-down(href='#home') 
+      | Populate
+    a.navbar-brand.jumps.hidden-md-up.small(href='#home') 
+      | Populate
+    // Normal Navigation
+    .hidden-sm-down
+      ul.nav.navbar-nav.pull-right
+        li.nav-item
+          a.nav-link.jumps(href='#focus') Our Method
+        li.nav-item
+          a.nav-link.jumps(href='#design') Our Experiences
+        li.nav-item
+          a.nav-link.jumps(href='#about') The Team
+        li.nav-item
+          a.nav-link.jumps(href='#contact') Contact
+    // Mobile Collapse Button
+    button.navbar-toggler.hidden-md-up.pull-right(type='button', data-toggle='collapse', data-target='#CollapsingNavbar2')
+      | ☰
 // Mobile Collapsable Content
 #CollapsingNavbar2.collapse.navbar-toggleable-sm.hidden-md-up.navbar-fixed-top.jumper
-  a.list-group-item.jumps(href='#focus') Our Focus & Methodology
-  a.list-group-item.jumps(href='#design') Our Designs
-  a.list-group-item(href='#about') About Us 
+  a.list-group-item.jumps(href='#focus') Our Method
+  a.list-group-item.jumps(href='#design') Our Experiences
+  a.list-group-item.jumps(href='#about') The Team 
   a.list-group-item.jumps(href='#contact') Contact

@@ -31,23 +31,27 @@
     <meta name="msapplication-TileImage" content="http://www.contextant.com/mstile-144x144.png">
   </head>
   <body>
-    <nav id="navbar" class="navbar navbar-fixed-top jumper navbar-dark bg-inverse"><a href="#home" class="navbar-brand jumps">
-         
-        Populate</a>
-      <!-- Normal Navigation-->
-      <div class="hidden-sm-down">
-        <ul class="nav navbar-nav pull-right">
-          <li class="nav-item"><a href="#focus" class="nav-link jumps">Our Focus & Methodology</a></li>
-          <li class="nav-item"><a href="#design" class="nav-link jumps">Our Designs</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link jumps">About Us</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link jumps">Contact</a></li>
-        </ul>
+    <nav id="navbar" class="navbar navbar-fixed-top jumper navbar-dark bg-inverse">
+      <div class="container"><a href="#home" class="navbar-brand jumps hidden-sm-down">
+           
+          Populate</a><a href="#home" class="navbar-brand jumps hidden-md-up small">
+           
+          Populate</a>
+        <!-- Normal Navigation-->
+        <div class="hidden-sm-down">
+          <ul class="nav navbar-nav pull-right">
+            <li class="nav-item"><a href="#focus" class="nav-link jumps">Our Method</a></li>
+            <li class="nav-item"><a href="#design" class="nav-link jumps">Our Experiences</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link jumps">The Team</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link jumps">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Mobile Collapse Button-->
+        <button type="button" data-toggle="collapse" data-target="#CollapsingNavbar2" class="navbar-toggler hidden-md-up pull-right">☰</button>
       </div>
-      <!-- Mobile Collapse Button-->
-      <button type="button" data-toggle="collapse" data-target="#CollapsingNavbar2" class="navbar-toggler hidden-md-up pull-right">☰</button>
     </nav>
     <!-- Mobile Collapsable Content-->
-    <div id="CollapsingNavbar2" class="collapse navbar-toggleable-sm hidden-md-up navbar-fixed-top jumper"><a href="#focus" class="list-group-item jumps">Our Focus & Methodology</a><a href="#design" class="list-group-item jumps">Our Designs</a><a href="#about" class="list-group-item">About Us </a><a href="#contact" class="list-group-item jumps">Contact</a></div>
+    <div id="CollapsingNavbar2" class="collapse navbar-toggleable-sm hidden-md-up navbar-fixed-top jumper"><a href="#focus" class="list-group-item jumps">Our Method</a><a href="#design" class="list-group-item jumps">Our Experiences</a><a href="#about" class="list-group-item jumps">The Team </a><a href="#contact" class="list-group-item jumps">Contact</a></div>
     <div class="jumbotron jumbotron-fluid splash bg-primary">
       <div class="overlay"></div>
       <div class="container">
@@ -70,56 +74,37 @@
       <h5 class="text-muted">Here's why we care about red phones, and why you should too:</h5>
       <p>Firstly, they're not as common as you think, and who knows when we'll come across more! Also, they work great in an emergency situation.</p>
     </div>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="view-section last-section contact">
       <div id="contact" class="spyscroll"></div>
       <div class="container">
-        <div class="row p-a">
-          <div class="col-lg-3">
-            <h3>We'd Love to Hear From You</h3>
-            <p>Contact us and let's see where we can help you meet your goals when creating an event!</p>
-          </div>
-          <div class="col-lg-9">
-            <form data-toggle="validator" role="form">
-              <fieldset class="form-group">
-                <label for="inputName" class="control-label">Name</label>
-                <input id="inputName" type="text" data-error="Even Mr. T has more than two characters in his name" minlength="2" maxlength="15" placeholder="Your Name" required="" class="form-control form-control-feedback">
-                <div class="help-block with-errors"></div>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="inputEmail" class="control-label">Email</label>
-                <input id="inputEmail" type="email" placeholder="Email" data-error="Don't worry, we won't SPAM ya!" required="" class="form-control form-control-feedback">
-                <div class="help-block with-errors"></div>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="inputEmail" class="control-label">Company Name</label>
-                <input id="inputEmail" type="text" placeholder="Company" data-error="Don't worry, we won't SPAM ya!" required="" class="form-control form-control-feedback">
-                <div class="help-block with-errors"></div>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="inputEmail" class="control-label">What's your position with the company?</label>
-                <input id="inputEmail" type="text" placeholder="Title" data-error="Don't worry, we won't SPAM ya!" required="" class="form-control form-control-feedback">
-                <div class="help-block with-errors"></div>
-              </fieldset>
-              <fieldset class="form-group">
-                <label for="exampleTextarea">What's your project?</label><small class="text-muted">
-                  <p>Give us a small insight into what your needs are.</p></small>
-                <textarea id="exampleTextarea" rows="2" maxlength="200" minlength="2" data-error="At least say hello!" class="form-control form-control-feedback"></textarea>
-                <div class="help-block with-errors"></div>
-              </fieldset>
-              <fieldset class="form-group">
-                <div class="checkbox">
-                  <label>
-                    <input id="terms" type="checkbox">
-                    <p>Want to receive updates?</p>
-                  </label><small class="text-muted">
-                    <p>Don't worry, we only like SPAM from a can.</p></small>
-                </div>
-              </fieldset>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary">Let's Talk!</button>
-              </div>
-            </form>
-          </div>
+        <h2 class="m-b-md text-danger">Contact</h2>
+        <div class="col-md-12">
+          <dl>
+            <dt>Phone</dt>
+            <dd>+1(234)567-8910</dd>
+            <dt>Email</dt>
+            <dd>heythere@populatebuilds.com</dd>
+            <dt>Twitter</dt>
+            <dd>@populatebuilds</dd>
+          </dl>
+        </div>
+        <div class="col-md-6">
+          <figure class="figure">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.022870072549!2d-117.22407788482815!3d32.897563585136325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06e294eb90c3%3A0x1a79b9be36260064!2s10637+Roselle+St%2C+San+Diego%2C+CA+92121!5e0!3m2!1sen!2sus!4v1446504812960" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            <figcaption class="figure-caption">
+               
+              10637 Roselle Street, Suite H<br>San Diego, CA<br>92121
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <figure class="figure">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.568247255478!2d-73.95178308463925!3d40.74952494325609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592791d2ed21%3A0x34f745f691141120!2s44-02+11th+St+%23306%2C+Long+Island+City%2C+NY+11101!5e0!3m2!1sen!2sus!4v1446505308006" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            <figcaption class="figure-caption">
+               
+              44-02 11th Street, Suite 306<br>Long Island City, NY<br>11101
+            </figcaption>
+          </figure>
         </div>
       </div>
     </div>

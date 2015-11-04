@@ -1,41 +1,33 @@
-.jumbotron.jumbotron-fluid
+.view-section.last-section.contact
   .spyscroll#contact
   .container
-    .row.p-a
-      .col-lg-3
-        h3 We'd Love to Hear From You
-        p Contact us and let's see where we can help you meet your goals when creating an event!
-      .col-lg-9
-        form(data-toggle='validator', role='form')
-          fieldset.form-group
-            label.control-label(for='inputName') Name
-            input#inputName.form-control.form-control-feedback(type='text', data-error='Even Mr. T has more than two characters in his name', minlength="2", maxlength='15', placeholder='Your Name', required='')
-            .help-block.with-errors
-
-          fieldset.form-group
-            label.control-label(for='inputEmail') Email
-            input#inputEmail.form-control.form-control-feedback(type='email', placeholder='Email', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
-            .help-block.with-errors
-          fieldset.form-group
-            label.control-label(for='inputEmail') Company Name
-            input#inputEmail.form-control.form-control-feedback(type='text', placeholder='Company', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
-            .help-block.with-errors
-          fieldset.form-group
-            label.control-label(for='inputEmail') What's your position with the company?
-            input#inputEmail.form-control.form-control-feedback(type='text', placeholder='Title', data-error='Don\'t worry\, we won\'t SPAM ya!', required='')
-            .help-block.with-errors
-          fieldset.form-group
-            label(for='exampleTextarea') What's your project?
-            small.text-muted
-              p Give us a small insight into what your needs are.
-            textarea#exampleTextarea.form-control.form-control-feedback(rows='2', maxlength='200', minlength='2', data-error='At least say hello!')
-            .help-block.with-errors
-          fieldset.form-group
-            .checkbox
-              label
-                input#terms(type='checkbox')
-                p Want to receive updates?
-              small.text-muted
-                p Don't worry, we only like SPAM from a can.
-          .form-group
-            button.btn.btn-primary(type='submit') Let's Talk!
+    h2.m-b-md.text-danger Contact
+    .col-md-12
+      dl
+        dt Phone
+        dd +1(234)567-8910
+        dt Email
+        dd heythere@populatebuilds.com
+        dt Twitter
+        dd @populatebuilds
+    .col-md-6
+      figure.figure
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.022870072549!2d-117.22407788482815!3d32.897563585136325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc06e294eb90c3%3A0x1a79b9be36260064!2s10637+Roselle+St%2C+San+Diego%2C+CA+92121!5e0!3m2!1sen!2sus!4v1446504812960', width='100%', height='250', frameborder='0', style='border:0', allowfullscreen='')
+        figcaption.figure-caption 
+          | 10637 Roselle Street, Suite H
+          br
+          | San Diego, CA
+          br
+          | 92121
+          
+    .col-md-6
+      figure.figure
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.568247255478!2d-73.95178308463925!3d40.74952494325609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2592791d2ed21%3A0x34f745f691141120!2s44-02+11th+St+%23306%2C+Long+Island+City%2C+NY+11101!5e0!3m2!1sen!2sus!4v1446505308006', width='100%', height='250', frameborder='0', style='border:0', allowfullscreen='')
+        figcaption.figure-caption 
+          | 44-02 11th Street, Suite 306
+          br
+          | Long Island City, NY
+          br
+          | 11101
+          
+          
